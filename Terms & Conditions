@@ -1,41 +1,122 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Terms of Service – WeGenerateHomeImprovementLeads</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <title>Terms of Service — WeGenerateHomeImprovementLeads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body {margin:0; font-family:Arial, sans-serif; line-height:1.6; color:#222;}
-    header, footer {background:#111; color:#fff; padding:20px; text-align:center;}
-    nav a {color:#fff; margin:0 10px; text-decoration:none;}
-    nav a:hover {text-decoration:underline;}
-    .container {max-width:900px; margin:40px auto; padding:0 20px;}
+    :root{--bg:#0b0b0e;--bg-2:#121218;--ink:#e7e7ea;--muted:#a5a6ad;--line:#20222a;--accent:#c7ff4d;--accent-2:#f5ffb4;--card:#13141a;--radius:18px;--shadow:0 10px 30px rgba(0,0,0,.35),0 2px 8px rgba(0,0,0,.4)}
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1100px,92%);margin-inline:auto}
+    header{position:fixed;inset:0 0 auto 0;height:72px;z-index:40;backdrop-filter:saturate(180%) blur(8px);background:linear-gradient(to bottom, rgba(10,10,12,.75), rgba(10,10,12,.35) 60%, transparent);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .logo{width:34px;height:34px;border-radius:9px;background:radial-gradient(100% 100% at 30% 20%, var(--accent) 0%, #5a5a14 60%, #191a1f 100%);box-shadow:0 0 22px rgba(199,255,77,.25), inset 0 0 14px rgba(255,255,255,.06)}
+    nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+    .cta{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#000;font-weight:800;padding:12px 18px;border-radius:999px;box-shadow:0 0 24px rgba(199,255,77,.25)}
+    .page-hero{padding-top:120px;padding-bottom:48px;background:radial-gradient(800px 380px at 10% 0%, rgba(199,255,77,.10), transparent 60%),radial-gradient(900px 420px at 120% 0%, rgba(255,255,255,.06), transparent 60%)}
+    h1{font-size:clamp(32px,4vw,48px);margin:0 0 6px;font-weight:900}
+    .sub{color:var(--muted)}
+    .doc{padding:34px 0 70px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    h2{font-size:22px;margin:22px 0 8px} h3{font-size:18px;margin:18px 0 6px}
+    ul{margin:10px 0 18px 20px}
+    footer{background:var(--bg-2);border-top:1px solid var(--line);color:#c9c9cf;padding:28px 0}
+    @media (max-width:720px){nav ul{display:none}}
   </style>
 </head>
 <body>
   <header>
-    <h1>Terms of Service</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="data.html">Data Policy</a>
-      <a href="terms.html">Terms</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container nav">
+      <div class="brand"><span class="logo"></span><span>WeGenerateHomeImprovementLeads</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="data.html">Data Policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a class="cta" href="contact.html">Work With Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <div class="container">
-    <h2>Terms</h2>
-    <ul>
-      <li>Leads provided are exclusive unless stated otherwise.</li>
-      <li>All payments are due as agreed in advance unless specified otherwise.</li>
-      <li>We reserve the right to update these terms at any time.</li>
-      <li>Use of our services must comply with UK and EU laws.</li>
-    </ul>
-  </div>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Terms of Service</h1>
+      <div class="sub">Please read these terms carefully before using our Services.</div>
+    </div>
+  </section>
+
+  <section class="doc">
+    <div class="container card">
+      <h2>1. Acceptance</h2>
+      <p>By accessing or using the Services of <strong>BeautyCommerce Ltd</strong> (trading as <strong>WeGenerateHomeImprovementLeads</strong>), you agree to these Terms. If you do not agree, do not use the Services.</p>
+
+      <h2>2. Services</h2>
+      <p>We provide inbound lead generation and related services for home-service verticals (Roofing, Windows, Gutters, Garden). Specific deliverables, pricing, and filters are defined in your order form or agreement.</p>
+
+      <h2>3. Lead Delivery & Quality</h2>
+      <ul>
+        <li>Leads are exclusive unless otherwise stated.</li>
+        <li>Delivery may occur via email, SMS, webhook/CRM, or live transfer.</li>
+        <li>We apply verification and filtering to reduce invalid traffic; no system can guarantee 100% accuracy.</li>
+      </ul>
+
+      <h2>4. Fees & Payment</h2>
+      <ul>
+        <li>Fees are due in advance unless otherwise agreed in writing.</li>
+        <li>Late payment may result in suspension of Services.</li>
+      </ul>
+
+      <h2>5. Refunds / Credits</h2>
+      <p>Credit policies for invalid leads (e.g., wrong vertical, disconnected number) are defined in your order form and require timely submission with evidence.</p>
+
+      <h2>6. Client Responsibilities</h2>
+      <ul>
+        <li>Maintain lawful sales practices and comply with telemarketing and privacy laws.</li>
+        <li>Provide accurate intake criteria and promptly report issues.</li>
+      </ul>
+
+      <h2>7. Compliance</h2>
+      <p>You must comply with all applicable laws, including UK GDPR/PECR and local marketing/consumer protection rules.</p>
+
+      <h2>8. Intellectual Property</h2>
+      <p>We retain all rights in our websites, creatives, software, and methodologies. You may not copy or reverse-engineer our systems.</p>
+
+      <h2>9. Confidentiality</h2>
+      <p>Non-public information shared between the parties must be kept confidential and used only for the purpose of the engagement.</p>
+
+      <h2>10. Limitation of Liability</h2>
+      <p>To the maximum extent permitted by law, we are not liable for indirect, incidental, or consequential damages. Our aggregate liability is limited to the fees paid in the 3 months preceding the claim.</p>
+
+      <h2>11. Indemnity</h2>
+      <p>You agree to indemnify and hold us harmless from claims arising from your misuse of the leads or breach of these Terms.</p>
+
+      <h2>12. Termination</h2>
+      <p>Either party may terminate for convenience with written notice in accordance with the order form, or immediately for material breach.</p>
+
+      <h2>13. Governing Law</h2>
+      <p>These Terms are governed by the laws of England and Wales. Courts of England and Wales have exclusive jurisdiction.</p>
+
+      <h2>Contact</h2>
+      <p><strong>BeautyCommerce Ltd</strong><br>Company No. 16373981<br>128 City Road, London, EC1V 2NX, United Kingdom<br>Email: <a href="mailto:info@beautycommerce.co.uk" style="text-decoration:underline">info@beautycommerce.co.uk</a></p>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 BeautyCommerce Ltd</p>
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center">
+      <div>&copy; 2025 BeautyCommerce Ltd</div>
+      <div style="display:flex;gap:16px">
+        <a href="privacy.html">Privacy</a><span aria-hidden="true">•</span>
+        <a href="data.html">Data Policy</a><span aria-hidden="true">•</span>
+        <a href="terms.html">Terms</a><span aria-hidden="true">•</span>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
