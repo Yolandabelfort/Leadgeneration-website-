@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BeautyCommerce Ltd – Home Services Lead Generation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; color:#222;}
+    header {background:#1e3a8a; color:#fff; padding:15px 20px;}
+    header h1 {margin:0; font-size:22px;}
+    nav a {color:#fff; margin-right:15px; text-decoration:none;}
+    nav a:hover {text-decoration:underline;}
+    .container {max-width:900px; margin:20px auto; padding:0 15px;}
+    h2 {color:#1e3a8a;}
+    footer {background:#f1f1f1; padding:20px; text-align:center; margin-top:40px; font-size:14px; color:#555;}
+    footer a {color:#1e3a8a; text-decoration:none;}
+    footer a:hover {text-decoration:underline;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BeautyCommerce Ltd</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#data">Data Policy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container" id="home">
+    <h2>Welcome</h2>
+    <p>BeautyCommerce Ltd is a professional lead generation company. We connect businesses with high-quality leads in:</p>
+    <ul>
+      <li>Home Improvement</li>
+      <li>Roofing</li>
+      <li>Bathroom Remodeling</li>
+      <li>Gutter Services</li>
+      <li>Gardening & Landscaping</li>
+    </ul>
+    <p>Our mission is simple: help companies grow by delivering real, exclusive, and ready-to-convert leads.</p>
+  </div>
+
+  <div class="container" id="privacy">
+    <h2>Privacy Policy</h2>
+    <p>Your privacy is important to us. We collect and process personal data in accordance with applicable UK data protection laws. Information you provide may be used to respond to inquiries, deliver requested services, and improve our operations.</p>
+    <p>We do not sell your personal data to third parties. Data may be shared only with trusted partners when required to fulfil services.</p>
+  </div>
+
+  <div class="container" id="data">
+    <h2>Data Policy</h2>
+    <p>BeautyCommerce Ltd may collect information such as names, email addresses, phone numbers, and service interests when you interact with our site or services.</p>
+    <p>Data is securely stored and only kept as long as necessary for the purposes collected. You have the right to request access, correction, or deletion of your personal data at any time.</p>
+    <p>For more details, please contact us using the information below.</p>
+  </div>
+
+  <div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>BeautyCommerce Ltd</strong><br>
+       Company Number: 16373981<br>
+       128 City Road<br>
+       London, EC1V 2NX<br>
+       United Kingdom</p>
+    <p>Email: info@beautycommerce.co.uk</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 BeautyCommerce Ltd. All rights reserved.</p>
+    <p><a href="#privacy">Privacy Policy</a> | <a href="#data">Data Policy</a></p>
+  </footer>
+</body>
+</html>
