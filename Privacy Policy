@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Privacy Policy – WeGenerateHomeImprovementLeads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {margin:0; font-family:Arial, sans-serif; line-height:1.6; color:#222;}
+    header, footer {background:#111; color:#fff; padding:20px; text-align:center;}
+    nav a {color:#fff; margin:0 10px; text-decoration:none;}
+    nav a:hover {text-decoration:underline;}
+    .container {max-width:900px; margin:40px auto; padding:0 20px;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Privacy Policy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="data.html">Data Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Our Commitment</h2>
+    <p>Your privacy is important to us. We collect and process personal data in accordance with UK data protection laws. We use your information only to deliver services, respond to inquiries, and improve operations.</p>
+    <p>We do not sell your personal data. Information may be shared only with trusted partners when required to fulfil services.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 BeautyCommerce Ltd</p>
+  </footer>
+</body>
+</html>
