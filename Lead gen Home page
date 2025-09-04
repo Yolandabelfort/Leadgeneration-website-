@@ -1,96 +1,232 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>WeGenerateHomeImprovementLeads – Home Services Lead Generation</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <title>WeGenerateHomeImprovementLeads — Premium Home Services Lead Generation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body {margin:0; font-family: Arial, sans-serif; color:#222; line-height:1.6;}
-    header {position:absolute; top:0; left:0; width:100%; display:flex; justify-content:space-between; align-items:center; padding:20px 40px; z-index:100;}
-    header h1 {margin:0; font-size:18px; color:#fff;}
-    nav a {color:#fff; margin-left:20px; text-decoration:none; font-weight:600;}
-    nav a:hover {text-decoration:underline;}
-    .hero {
-      background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-      color:#fff; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative;
+    :root{
+      --bg:#0b0b0e;
+      --bg-2:#121218;
+      --ink:#e7e7ea;
+      --muted:#a5a6ad;
+      --line:#20222a;
+      --accent:#c7ff4d;     /* neon-lime accent */
+      --accent-2:#f5ffb4;
+      --card:#13141a;
+      --radius:18px;
+      --shadow:0 10px 30px rgba(0,0,0,.35), 0 2px 8px rgba(0,0,0,.4);
     }
-    .hero::after {content:""; position:absolute; inset:0; background:rgba(0,0,0,0.5);}
-    .hero-content {position:relative; z-index:1; max-width:700px; padding:0 15px;}
-    .hero h2 {font-size:38px; margin-bottom:20px; color:#fff;}
-    .hero p {font-size:18px; margin-bottom:30px; color:#fff;}
-    .btn {background:#000; color:#fff; padding:14px 30px; border:none; border-radius:6px; font-size:16px; text-decoration:none;}
-    .btn:hover {background:#333;}
-    .section {max-width:1100px; margin:80px auto; padding:0 20px;}
-    .services {display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px;}
-    .card {background:#fff; border:1px solid #ddd; border-radius:8px; padding:20px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.05);}
-    .card h3 {margin-top:10px; color:#000;}
-    .trust {background:#f9fafb; padding:60px 20px; text-align:center;}
-    .trust h2 {color:#000;}
-    footer {background:#111; color:#ccc; padding:30px 20px; text-align:center;}
-    footer a {color:#ccc; margin:0 10px; text-decoration:none;}
-    footer a:hover {text-decoration:underline;}
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+      color:var(--ink); background:radial-gradient(1200px 600px at 70% -10%, #22223a 0%, transparent 55%), var(--bg);
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+    }
+    a{color:inherit; text-decoration:none}
+    .container{width:min(1200px,92%); margin-inline:auto}
+
+    /* NAV */
+    header{
+      position:fixed; inset:0 0 auto 0; height:72px; z-index:40;
+      backdrop-filter:saturate(180%) blur(8px);
+      background:linear-gradient(to bottom, rgba(10,10,12,.75), rgba(10,10,12,.35) 60%, transparent);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .nav{height:72px; display:flex; align-items:center; justify-content:space-between}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.2px}
+    .logo{
+      width:34px; height:34px; border-radius:9px;
+      background:radial-gradient(100% 100% at 30% 20%, var(--accent) 0%, #5a5a14 60%, #191a1f 100%);
+      box-shadow:0 0 22px rgba(199,255,77,.25), inset 0 0 14px rgba(255,255,255,.06);
+    }
+    nav ul{display:flex; gap:22px; list-style:none; margin:0; padding:0}
+    nav a{font-weight:700; opacity:.92}
+    .cta{
+      background:linear-gradient(135deg, var(--accent), var(--accent-2));
+      color:#000; font-weight:800; border:none; padding:12px 18px; border-radius:999px; box-shadow:0 0 24px rgba(199,255,77,.25);
+    }
+    .cta:hover{filter:brightness(.96); transform:translateY(-1px)}
+
+    /* HERO */
+    .hero{
+      position:relative; padding-top:calc(72px + 40px); min-height:88vh; display:grid; place-items:center;
+      background:
+        radial-gradient(900px 420px at 10% 10%, rgba(199,255,77,.08), transparent 60%),
+        radial-gradient(1000px 500px at 120% 0%, rgba(255,255,255,.06), transparent 60%);
+      overflow:hidden;
+    }
+    .hero-inner{display:grid; grid-template-columns:1.05fr .95fr; gap:32px; align-items:center}
+    .eyebrow{display:inline-flex; gap:8px; align-items:center; font-size:12px; font-weight:800; letter-spacing:.4px; text-transform:uppercase; opacity:.85}
+    .dot{width:8px; height:8px; border-radius:999px; background:var(--accent); box-shadow:0 0 14px rgba(199,255,77,.7)}
+    h1{font-size:clamp(32px, 4.2vw + 8px, 54px); line-height:1.06; margin:10px 0 8px; font-weight:900}
+    .lead{color:var(--muted); font-size:18px; margin:0 0 22px}
+    .hero-cta{display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-top:8px}
+
+    /* Replaces globe with your house photo */
+    .photo{
+      width:min(560px, 95%); aspect-ratio:4/3; border-radius:24px; overflow:hidden;
+      position:relative; border:1px solid var(--line); box-shadow:var(--shadow);
+      background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+    }
+    .photo:after{
+      content:""; position:absolute; inset:0;
+      background:linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.4));
+      pointer-events:none;
+    }
+
+    /* KPIs */
+    .kpis{display:flex; gap:26px; flex-wrap:wrap; margin-top:18px}
+    .kpi{display:flex; flex-direction:column}
+    .kpi .label{color:var(--muted); font-size:12px; letter-spacing:.3px; text-transform:uppercase}
+    .kpi .value{font-weight:900; font-size:22px}
+
+    /* Services */
+    section{padding:68px 0}
+    .section-title{font-size:28px; margin:0 0 8px; font-weight:900}
+    .section-sub{color:var(--muted); margin:0 0 22px}
+    .cards{display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:16px}
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.00));
+      border:1px solid var(--line); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow)
+    }
+    .card h3{margin:6px 0 8px; font-size:18px}
+    .card p{color:var(--muted); margin:0}
+
+    /* CTA band */
+    .band{
+      background:linear-gradient(90deg, rgba(199,255,77,.12), rgba(199,255,77,.02));
+      border:1px solid var(--line); border-radius:var(--radius); padding:22px; display:flex; align-items:center; justify-content:space-between; gap:16px
+    }
+    .band strong{font-size:20px}
+
+    /* Footer */
+    footer{background:var(--bg-2); border-top:1px solid var(--line); padding:28px 0; color:#c9c9cf}
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero-inner{grid-template-columns:1fr}
+      .cards{grid-template-columns:repeat(2, minmax(0,1fr))}
+    }
+    @media (max-width: 620px){
+      .cards{grid-template-columns:1fr}
+      .nav ul{display:none}
+    }
   </style>
 </head>
 <body>
+
+  <!-- NAV -->
   <header>
-    <h1>WeGenerateHomeImprovementLeads</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="data.html">Data Policy</a>
-      <a href="terms.html">Terms</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container nav">
+      <div class="brand">
+        <span class="logo" aria-hidden="true"></span>
+        <span>WeGenerateHomeImprovementLeads</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="data.html">Data Policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a class="cta" href="contact.html">Work With Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-content">
-      <h2>Trusted Leads for Home Services</h2>
-      <p>We connect businesses with exclusive, ready-to-convert leads in roofing, windows, gutters, and garden services.</p>
-      <a href="contact.html" class="btn">Work With Us</a>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Quality leads</div>
+        <h1>Maximize conversions and accelerate growth in <span style="background:linear-gradient(135deg,var(--accent),#fff);-webkit-background-clip:text;background-clip:text;color:transparent">home services</span></h1>
+        <p class="lead">Exclusive, high-intent leads for Roofing, Windows, Gutters, and Garden services — delivered fast and verified.</p>
+        <div class="hero-cta">
+          <a class="cta" href="contact.html">Work With Us</a>
+          <!-- Removed the privacy button by request -->
+        </div>
+
+        <div class="kpis" role="list" aria-label="Key performance indicators">
+          <div class="kpi" role="listitem">
+            <span class="label">Leads Sold Monthly</span>
+            <span class="value">55,000+</span>
+          </div>
+          <div class="kpi" role="listitem">
+            <span class="label">Team Members</span>
+            <span class="value">7</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Replaced globe with the house photo -->
+      <div class="photo" role="img" aria-label="Modern home exterior representing home improvement"></div>
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="section">
-    <h2>Our Verticals</h2>
-    <div class="services">
-      <div class="card">
-        <h3>Roofing</h3>
-        <p>High-quality leads for roof repairs, replacements, and storm damage.</p>
+  <!-- SERVICES -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Lead generation solutions that <span style="color:var(--accent)">convert</span></h2>
+      <p class="section-sub">Targeted traffic, strong filtering, and real-time delivery to your CRM or phone.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Roofing</h3>
+          <p>Replacements, repairs & storm-damage inquiries from homeowners in your service area.</p>
+        </article>
+        <article class="card">
+          <h3>Windows</h3>
+          <p>Energy-efficient upgrades and full installs with budget & timeline filters.</p>
+        </article>
+        <article class="card">
+          <h3>Gutters</h3>
+          <p>Installs, guards, cleaning & maintenance — seasonal demand you can scale.</p>
+        </article>
+        <article class="card">
+          <h3>Garden</h3>
+          <p>Landscaping, lawn care, and hardscapes with clear project intent.</p>
+        </article>
       </div>
-      <div class="card">
-        <h3>Windows</h3>
-        <p>Exclusive prospects for window installation and energy-efficient upgrades.</p>
-      </div>
-      <div class="card">
-        <h3>Gutters</h3>
-        <p>Reliable leads for gutter cleaning, guards, installs, and maintenance.</p>
-      </div>
-      <div class="card">
-        <h3>Gardens</h3>
-        <p>Landscaping, lawn care, and garden renovation leads to grow your business.</p>
+
+      <div class="band" style="margin-top:22px">
+        <strong>Ready to scale your pipeline?</strong>
+        <a class="cta" href="contact.html">Work With Us</a>
       </div>
     </div>
   </section>
 
-  <!-- Trust -->
-  <section class="trust">
-    <h2>Why Work With Us?</h2>
-    <p><strong>WeGenerateHomeImprovementLeads</strong> is operated by BeautyCommerce Ltd (Company No. 16373981).<br>
-    128 City Road, London, EC1V 2NX, United Kingdom.</p>
-    <p>We deliver transparent, compliant, and high-quality lead generation.</p>
+  <!-- TRUST -->
+  <section style="padding-top:20px">
+    <div class="container" style="border:1px solid var(--line); border-radius:var(--radius); padding:18px; background:rgba(255,255,255,.02)">
+      <div style="display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:space-between">
+        <div>
+          Operated by <strong>BeautyCommerce Ltd</strong> · Company No. <strong>16373981</strong>
+        </div>
+        <div>
+          128 City Road, London, EC1V 2NX, United Kingdom · <a href="mailto:info@beautycommerce.co.uk" style="text-decoration:underline">info@beautycommerce.co.uk</a>
+        </div>
+      </div>
+    </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 BeautyCommerce Ltd. All rights reserved.</p>
-    <p>
-      <a href="privacy.html">Privacy Policy</a> | 
-      <a href="data.html">Data Policy</a> | 
-      <a href="terms.html">Terms of Service</a> | 
-      <a href="contact.html">Contact</a>
-    </p>
+    <div class="container" style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between">
+      <div>&copy; 2025 BeautyCommerce Ltd. All rights reserved.</div>
+      <div style="display:flex; gap:16px; align-items:center">
+        <a href="privacy.html">Privacy Policy</a>
+        <span aria-hidden="true">•</span>
+        <a href="data.html">Data Policy</a>
+        <span aria-hidden="true">•</span>
+        <a href="terms.html">Terms of Service</a>
+        <span aria-hidden="true">•</span>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
