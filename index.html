@@ -37,7 +37,11 @@
     }
     .nav{height:72px; display:flex; align-items:center; justify-content:space-between}
     .brand{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.2px}
-    .logo { width: 34px; height: 34px; border-radius: 9px; background-image: url(./assets/logo.svg); background-size: 100%; box-shadow: 0 0 22px rgba(199, 255, 77, 0.25), inset 0 0 14px rgba(255, 255, 255, 0.06); }
+    .logo{
+      width:34px; height:34px; border-radius:9px;
+      background:radial-gradient(100% 100% at 30% 20%, var(--accent) 0%, #5a5a14 60%, #191a1f 100%);
+      box-shadow:0 0 22px rgba(199,255,77,.25), inset 0 0 14px rgba(255,255,255,.06);
+    }
     nav ul{display:flex; gap:22px; list-style:none; margin:0; padding:0}
     nav a{font-weight:700; opacity:.92}
     .cta{
@@ -72,6 +76,11 @@
       background:linear-gradient(180deg, rgba(0,0,0,.25), rgba(0,0,0,.4));
       pointer-events:none;
     }
+
+    /* About block */
+    .about-block{margin-top:20px}
+    .about-block h2{color:var(--accent); font-weight:800; font-size:22px; margin:0 0 8px}
+    .about-block p{color:var(--ink); font-size:16px; line-height:1.5; margin:0}
 
     /* KPIs */
     .kpis{display:flex; gap:26px; flex-wrap:wrap; margin-top:18px}
@@ -142,7 +151,6 @@
         <p class="lead">Exclusive, high-intent leads for Roofing, Windows, Gutters, and Garden services — delivered fast and verified.</p>
         <div class="hero-cta">
           <a class="cta" href="contact.html">Work With Us</a>
-          <!-- Removed the privacy button by request -->
         </div>
 
         <div class="kpis" role="list" aria-label="Key performance indicators">
@@ -158,7 +166,17 @@
       </div>
 
       <!-- Replaced globe with the house photo -->
-      <div class="photo" role="img" aria-label="Modern home exterior representing home improvement"></div>
+      <div>
+        <div class="photo" role="img" aria-label="Modern home exterior representing home improvement"></div>
+        
+        <!-- NEW About section -->
+        <div class="about-block">
+          <h2>About WeGenerateHomeImprovementLeads</h2>
+          <p>
+            WeGenerateHomeImprovementLeads finds homeowners who are actively ready to buy, from a new roof to a bathroom remodel, new windows, or gutter work, and turns that intent into qualified leads. With our in-house copy, media, video, and dev teams working as one, we build, launch, and optimise campaigns fast, with transparent reporting and real-time delivery to your CRM.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -226,3 +244,4 @@
 
 </body>
 </html>
+
