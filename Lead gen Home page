@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WeGenerateHomeImprovementLeads – Home Services Lead Generation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {margin:0; font-family: Arial, sans-serif; color:#222; line-height:1.6;}
+    header {position:absolute; top:0; left:0; width:100%; display:flex; justify-content:space-between; align-items:center; padding:20px 40px; z-index:100;}
+    header h1 {margin:0; font-size:18px; color:#fff;}
+    nav a {color:#fff; margin-left:20px; text-decoration:none; font-weight:600;}
+    nav a:hover {text-decoration:underline;}
+    .hero {
+      background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color:#fff; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative;
+    }
+    .hero::after {content:""; position:absolute; inset:0; background:rgba(0,0,0,0.5);}
+    .hero-content {position:relative; z-index:1; max-width:700px; padding:0 15px;}
+    .hero h2 {font-size:38px; margin-bottom:20px; color:#fff;}
+    .hero p {font-size:18px; margin-bottom:30px; color:#fff;}
+    .btn {background:#000; color:#fff; padding:14px 30px; border:none; border-radius:6px; font-size:16px; text-decoration:none;}
+    .btn:hover {background:#333;}
+    .section {max-width:1100px; margin:80px auto; padding:0 20px;}
+    .services {display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:20px;}
+    .card {background:#fff; border:1px solid #ddd; border-radius:8px; padding:20px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.05);}
+    .card h3 {margin-top:10px; color:#000;}
+    .trust {background:#f9fafb; padding:60px 20px; text-align:center;}
+    .trust h2 {color:#000;}
+    footer {background:#111; color:#ccc; padding:30px 20px; text-align:center;}
+    footer a {color:#ccc; margin:0 10px; text-decoration:none;}
+    footer a:hover {text-decoration:underline;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WeGenerateHomeImprovementLeads</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="data.html">Data Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Trusted Leads for Home Services</h2>
+      <p>We connect businesses with exclusive, ready-to-convert leads in roofing, windows, gutters, and garden services.</p>
+      <a href="contact.html" class="btn">Work With Us</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section">
+    <h2>Our Verticals</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Roofing</h3>
+        <p>High-quality leads for roof repairs, replacements, and storm damage.</p>
+      </div>
+      <div class="card">
+        <h3>Windows</h3>
+        <p>Exclusive prospects for window installation and energy-efficient upgrades.</p>
+      </div>
+      <div class="card">
+        <h3>Gutters</h3>
+        <p>Reliable leads for gutter cleaning, guards, installs, and maintenance.</p>
+      </div>
+      <div class="card">
+        <h3>Gardens</h3>
+        <p>Landscaping, lawn care, and garden renovation leads to grow your business.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section class="trust">
+    <h2>Why Work With Us?</h2>
+    <p><strong>WeGenerateHomeImprovementLeads</strong> is operated by BeautyCommerce Ltd (Company No. 16373981).<br>
+    128 City Road, London, EC1V 2NX, United Kingdom.</p>
+    <p>We deliver transparent, compliant, and high-quality lead generation.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BeautyCommerce Ltd. All rights reserved.</p>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> | 
+      <a href="data.html">Data Policy</a> | 
+      <a href="terms.html">Terms of Service</a> | 
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+</body>
+</html>
