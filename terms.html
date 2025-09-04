@@ -27,6 +27,20 @@
     ul{margin:10px 0 18px 20px}
     footer{background:var(--bg-2);border-top:1px solid var(--line);color:#c9c9cf;padding:28px 0}
     @media (max-width:720px){nav ul{display:none}}
+    @media (max-width: 540px){
+      .mobile{
+        display: block !important;
+      }
+      .disk-top{
+        display: none !important;
+      }
+    }
+    .mobile{
+      display: none;
+    }
+    .disk-top{
+      display:flex;
+    }
   </style>
 </head>
 <body>
@@ -109,12 +123,22 @@
   </section>
 
   <footer>
-    <div class="container" style="display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center">
-      <div>&copy; 2025 BeautyCommerce Ltd</div>
-      <div style="display:flex;gap:16px">
-        <a href="privacy.html">Privacy</a><span aria-hidden="true">•</span>
-        <a href="data.html">Data Policy</a><span aria-hidden="true">•</span>
-        <a href="terms.html">Terms</a><span aria-hidden="true">•</span>
+    <div class="container" style="display:flex; flex-wrap:wrap; gap:10px; align-items:center; justify-content:space-between">
+      <div>&copy; 2025 BeautyCommerce Ltd. All rights reserved.</div>
+      <div style=" gap:16px; align-items:center" class="mobile">
+        <a href="privacy.html" style="display: flex"><span aria-hidden="true" style="margin-right: 6px;">•</span> Privacy Policy</a>
+        <a href="data.html" style="display: flex"><span aria-hidden="true" style="margin-right: 6px;">•</span> Data Policy</a>
+        <a href="terms.html" style="display: flex"><span aria-hidden="true" style="margin-right: 6px;">•</span> Terms of Service</a>
+        <a href="contact.html" style="display: flex"><span aria-hidden="true" style="margin-right: 6px;">•</span> Contact</a>
+      </div>
+
+      <div style=" gap:16px; align-items:center" class="disk-top">
+        <a href="privacy.html">Privacy Policy</a>
+        <span aria-hidden="true">•</span>
+        <a href="data.html">Data Policy</a>
+        <span aria-hidden="true">•</span>
+        <a href="terms.html">Terms of Service</a>
+        <span aria-hidden="true">•</span>
         <a href="contact.html">Contact</a>
       </div>
     </div>
