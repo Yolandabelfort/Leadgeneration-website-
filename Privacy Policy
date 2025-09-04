@@ -1,139 +1,142 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Privacy Policy – WeGenerateHomeImprovementLeads</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <title>Privacy Policy — WeGenerateHomeImprovementLeads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body {margin:0; font-family:Arial, sans-serif; line-height:1.6; color:#222;}
-    header, footer {background:#111; color:#fff; padding:20px; text-align:center;}
-    nav a {color:#fff; margin:0 10px; text-decoration:none;}
-    nav a:hover {text-decoration:underline;}
-    .container {max-width:900px; margin:40px auto; padding:0 20px;}
-    h1, h2 {color:#000;}
+    :root{
+      --bg:#0b0b0e; --bg-2:#121218; --ink:#e7e7ea; --muted:#a5a6ad;
+      --line:#20222a; --accent:#c7ff4d; --accent-2:#f5ffb4; --card:#13141a;
+      --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.35), 0 2px 8px rgba(0,0,0,.4);
+    }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0; font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--bg)}
+    a{color:inherit; text-decoration:none}
+    .container{width:min(1100px,92%); margin-inline:auto}
+    header{
+      position:fixed; inset:0 0 auto 0; height:72px; z-index:40;
+      backdrop-filter:saturate(180%) blur(8px);
+      background:linear-gradient(to bottom, rgba(10,10,12,.75), rgba(10,10,12,.35) 60%, transparent);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .nav{height:72px; display:flex; align-items:center; justify-content:space-between}
+    .brand{display:flex; align-items:center; gap:12px; font-weight:800}
+    .logo{width:34px; height:34px; border-radius:9px; background:radial-gradient(100% 100% at 30% 20%, var(--accent) 0%, #5a5a14 60%, #191a1f 100%); box-shadow:0 0 22px rgba(199,255,77,.25), inset 0 0 14px rgba(255,255,255,.06)}
+    nav ul{display:flex; gap:22px; list-style:none; margin:0; padding:0}
+    .cta{background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#000; font-weight:800; padding:12px 18px; border-radius:999px; box-shadow:0 0 24px rgba(199,255,77,.25)}
+    .page-hero{padding-top:120px; padding-bottom:48px; background:
+      radial-gradient(800px 380px at 10% 0%, rgba(199,255,77,.10), transparent 60%),
+      radial-gradient(900px 420px at 120% 0%, rgba(255,255,255,.06), transparent 60%);}
+    h1{font-size:clamp(32px,4vw,48px); margin:0 0 6px; font-weight:900}
+    .sub{color:var(--muted)}
+    .doc{padding:34px 0 70px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0)); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:22px}
+    h2{font-size:22px; margin:22px 0 8px}
+    h3{font-size:18px; margin:18px 0 6px}
+    ul{margin:10px 0 18px 20px}
+    footer{background:var(--bg-2); border-top:1px solid var(--line); color:#c9c9cf; padding:28px 0}
+    @media (max-width:720px){ nav ul{display:none} }
   </style>
 </head>
 <body>
+  <!-- NAV -->
   <header>
-    <h1>Privacy Policy</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="data.html">Data Policy</a>
-      <a href="terms.html">Terms</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container nav">
+      <div class="brand"><span class="logo"></span><span>WeGenerateHomeImprovementLeads</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="data.html">Data Policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a class="cta" href="contact.html">Work With Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <div class="container">
-    <p><strong>Last updated July 4, 2025</strong></p>
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Privacy Policy</h1>
+      <div class="sub">Last updated <strong>July 4, 2025</strong></div>
+    </div>
+  </section>
 
-    <p>
-      This privacy notice for <strong>BeautyCommerce Ltd</strong> (doing business as <strong>WeGenerateHomeImprovementLeads</strong>) 
-      ("<strong>WeGenerateHomeImprovementLeads</strong>", "we," "us," or "our") describes how and why we might collect, 
-      store, use, and/or share ("process") your information when you use our services ("Services"), such as when you:
-    </p>
-    <ul>
-      <li>Visit our website at <strong>https://WeGenerateHomeImprovementLeads.com</strong>, or any website of ours that links to this privacy notice.</li>
-      <li>Engage with us in other related ways, including any sales, marketing, or events.</li>
-    </ul>
+  <!-- DOCUMENT -->
+  <section class="doc">
+    <div class="container card">
+      <p>This privacy notice for <strong>BeautyCommerce Ltd</strong> (trading as <strong>WeGenerateHomeImprovementLeads</strong>) (“we”, “us”, or “our”) explains how and why we collect, store, use, and share (“process”) your personal information when you use our services (“Services”), such as when you visit <strong>https://WeGenerateHomeImprovementLeads.com</strong> or engage with us in sales, marketing, or events.</p>
+      <p>Questions? Contact <a href="mailto:info@beautycommerce.co.uk" style="text-decoration:underline">info@beautycommerce.co.uk</a>. If you do not agree with this notice, please do not use the Services.</p>
 
-    <p>
-      Questions or concerns? Reading this privacy notice will help you understand your privacy rights and choices. 
-      If you do not agree with our policies and practices, please do not use our Services. 
-      If you still have any questions or concerns, please contact us at <strong>info@beautycommerce.co.uk</strong>.
-    </p>
+      <h2>Summary of Key Points</h2>
+      <ul>
+        <li><strong>Data we process:</strong> details you provide (name, email, phone, service interests) and technical data collected automatically (IP, device, usage).</li>
+        <li><strong>Sensitive data:</strong> we do not process sensitive categories.</li>
+        <li><strong>Why we process:</strong> to operate and improve the Services, communicate with you, prevent fraud/security issues, and comply with law.</li>
+        <li><strong>Sharing:</strong> with trusted service providers/affiliates under contracts, or when required by law or during business transfers.</li>
+        <li><strong>Security:</strong> administrative, organizational, and technical safeguards are in place, but no system is 100% secure.</li>
+        <li><strong>Your rights:</strong> depending on your location, access, rectification, deletion, restriction, objection, and portability.</li>
+      </ul>
 
-    <h2>SUMMARY OF KEY POINTS</h2>
-    <p>This summary provides key points, but you can read the full details below.</p>
-    <ul>
-      <li><strong>What personal information do we process?</strong> We may process personal information you provide (e.g., name, email, phone, service interests) and information collected automatically (e.g., IP address, browser, device).</li>
-      <li><strong>Do we process sensitive information?</strong> No, we do not process sensitive information.</li>
-      <li><strong>Do we receive information from third parties?</strong> No, we do not receive personal information from third parties.</li>
-      <li><strong>How do we process your information?</strong> We process it to provide and improve our services, communicate with you, ensure security, prevent fraud, and comply with the law.</li>
-      <li><strong>Do we share your information?</strong> We may share information with trusted service providers, affiliates, or during business transfers — always under appropriate safeguards.</li>
-      <li><strong>How do we keep information safe?</strong> We use technical and organizational measures, but no method is 100% secure.</li>
-      <li><strong>What are your rights?</strong> Depending on your location, you may have rights to access, correct, delete, or restrict use of your data.</li>
-    </ul>
+      <h2>1) Information We Collect</h2>
+      <h3>Personal information you provide</h3>
+      <p>When you request information, submit a form, or contact us, we collect personal details such as your name, email address, phone number, company, and service interests. All information you provide must be accurate and kept up-to-date.</p>
 
-    <h2>TABLE OF CONTENTS</h2>
-    <ol>
-      <li>WHAT INFORMATION DO WE COLLECT?</li>
-      <li>HOW DO WE PROCESS YOUR INFORMATION?</li>
-      <li>WHAT LEGAL BASES DO WE RELY ON?</li>
-      <li>WHEN AND WITH WHOM DO WE SHARE YOUR INFORMATION?</li>
-      <li>DO WE USE COOKIES?</li>
-      <li>HOW LONG DO WE KEEP YOUR INFORMATION?</li>
-      <li>HOW DO WE KEEP YOUR INFORMATION SAFE?</li>
-      <li>DO WE COLLECT INFORMATION FROM MINORS?</li>
-      <li>WHAT ARE YOUR PRIVACY RIGHTS?</li>
-      <li>DO WE MAKE UPDATES TO THIS NOTICE?</li>
-      <li>HOW CAN YOU CONTACT US?</li>
-    </ol>
+      <h3>Information collected automatically</h3>
+      <p>We automatically collect device and usage data, including IP address, device/browser type, operating system, language, referring URLs, and interactions with our site. We use cookies and similar technologies for analytics, security, and site functionality. You may manage cookies via your browser settings; some features may not function without them.</p>
 
-    <h2>1. WHAT INFORMATION DO WE COLLECT?</h2>
-    <p><strong>Personal information you disclose to us.</strong> We collect information you voluntarily provide when requesting information, signing up, or contacting us. Examples: name, email, phone, service interests.</p>
-    <p><strong>Information automatically collected.</strong> We collect device and usage data like IP address, browser type, operating system, location (approximate), referring URLs, and how you interact with our Services. We also use cookies and similar technologies.</p>
+      <h2>2) How We Use Your Information</h2>
+      <ul>
+        <li>To provide and improve the Services and our lead delivery.</li>
+        <li>To communicate (service messages and, where permitted, marketing).</li>
+        <li>To protect against fraud, misuse, and security incidents.</li>
+        <li>To comply with legal obligations and enforce agreements.</li>
+      </ul>
 
-    <h2>2. HOW DO WE PROCESS YOUR INFORMATION?</h2>
-    <p>We process your personal information to:</p>
-    <ul>
-      <li>Provide, operate, and improve our Services.</li>
-      <li>Communicate with you, including marketing messages (if opted in).</li>
-      <li>Ensure security, detect fraud, and comply with legal requirements.</li>
-      <li>Request feedback and measure engagement.</li>
-    </ul>
+      <h2>3) Legal Bases (UK/EU GDPR)</h2>
+      <p>We process personal data under one or more of the following bases: <strong>consent</strong>, <strong>contract</strong> (to deliver requested services), <strong>legitimate interests</strong> (e.g., improving Services), and <strong>legal obligation</strong>.</p>
 
-    <h2>3. WHAT LEGAL BASES DO WE RELY ON?</h2>
-    <p>We only process your personal information when legally permitted, such as:</p>
-    <ul>
-      <li>With your consent.</li>
-      <li>To perform contractual obligations.</li>
-      <li>To comply with legal obligations.</li>
-      <li>To pursue legitimate interests (e.g., improving services).</li>
-    </ul>
+      <h2>4) Sharing Your Information</h2>
+      <p>We share data with service providers (hosting, analytics, communication), affiliates of BeautyCommerce Ltd, professional advisers, and authorities where required. All vendors are bound by confidentiality and data processing terms.</p>
 
-    <h2>4. WHEN AND WITH WHOM DO WE SHARE YOUR INFORMATION?</h2>
-    <p>We may share data with:</p>
-    <ul>
-      <li>Service providers and contractors who assist us.</li>
-      <li>Affiliates under BeautyCommerce Ltd.</li>
-      <li>Business partners in joint projects.</li>
-      <li>Authorities when legally required.</li>
-    </ul>
+      <h2>5) Retention</h2>
+      <p>We keep personal data only as long as necessary for the purposes outlined or as required by law. When no longer needed, we delete or anonymize it, or securely store and isolate it until deletion is possible.</p>
 
-    <h2>5. DO WE USE COOKIES?</h2>
-    <p>Yes, we use cookies to store and track information. You can disable cookies in your browser, but some site functions may not work properly.</p>
+      <h2>6) Security</h2>
+      <p>We use appropriate technical and organizational measures to protect your data. Despite our efforts, no method of transmission or storage is completely secure.</p>
 
-    <h2>6. HOW LONG DO WE KEEP YOUR INFORMATION?</h2>
-    <p>We retain personal data only as long as needed for legitimate purposes or as required by law. When no longer needed, we securely delete or anonymize it.</p>
+      <h2>7) Children’s Privacy</h2>
+      <p>We do not knowingly collect data from anyone under 18 years of age.</p>
 
-    <h2>7. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
-    <p>We implement technical and organizational safeguards. However, no system is 100% secure. Use of our Services is at your own risk.</p>
+      <h2>8) Your Rights</h2>
+      <p>Where applicable (e.g., UK/EU), you can request access, rectification, deletion, restriction, portability, or object to processing. To exercise rights, contact <a href="mailto:info@beautycommerce.co.uk" style="text-decoration:underline">info@beautycommerce.co.uk</a>. You may lodge a complaint with the ICO (UK) or your local authority.</p>
 
-    <h2>8. DO WE COLLECT INFORMATION FROM MINORS?</h2>
-    <p>No, we do not knowingly collect or market to anyone under 18 years of age.</p>
+      <h2>9) Updates to This Notice</h2>
+      <p>We may update this notice from time to time. The “Last updated” date reflects the latest revision.</p>
 
-    <h2>9. WHAT ARE YOUR PRIVACY RIGHTS?</h2>
-    <p>You may request access, correction, or deletion of your personal data. You may also restrict or object to processing. To exercise these rights, email us at <strong>info@beautycommerce.co.uk</strong>.</p>
+      <h2>Contact</h2>
+      <p><strong>BeautyCommerce Ltd</strong> (trading as WeGenerateHomeImprovementLeads)<br>
+        Company No. 16373981<br>
+        128 City Road, London, EC1V 2NX, United Kingdom<br>
+        Email: <a href="mailto:info@beautycommerce.co.uk" style="text-decoration:underline">info@beautycommerce.co.uk</a></p>
+    </div>
+  </section>
 
-    <h2>10. DO WE MAKE UPDATES TO THIS NOTICE?</h2>
-    <p>Yes, we may update this Privacy Policy to stay compliant with laws. Updates will be indicated by the "Last updated" date at the top.</p>
-
-    <h2>11. HOW CAN YOU CONTACT US?</h2>
-    <p>If you have questions or comments, you may contact us at:</p>
-    <p>
-      <strong>BeautyCommerce Ltd</strong><br>
-      Company No. 16373981<br>
-      128 City Road<br>
-      London, EC1V 2NX<br>
-      United Kingdom<br>
-      Email: info@beautycommerce.co.uk
-    </p>
-  </div>
-
+  <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 BeautyCommerce Ltd</p>
+    <div class="container" style="display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; align-items:center">
+      <div>&copy; 2025 BeautyCommerce Ltd</div>
+      <div style="display:flex; gap:16px">
+        <a href="privacy.html">Privacy</a><span aria-hidden="true">•</span>
+        <a href="data.html">Data Policy</a><span aria-hidden="true">•</span>
+        <a href="terms.html">Terms</a><span aria-hidden="true">•</span>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
+
