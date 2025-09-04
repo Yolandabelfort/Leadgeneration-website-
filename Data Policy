@@ -1,37 +1,113 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Data Policy – WeGenerateHomeImprovementLeads</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <title>Data Policy — WeGenerateHomeImprovementLeads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body {margin:0; font-family:Arial, sans-serif; line-height:1.6; color:#222;}
-    header, footer {background:#111; color:#fff; padding:20px; text-align:center;}
-    nav a {color:#fff; margin:0 10px; text-decoration:none;}
-    nav a:hover {text-decoration:underline;}
-    .container {max-width:900px; margin:40px auto; padding:0 20px;}
+    :root{--bg:#0b0b0e;--bg-2:#121218;--ink:#e7e7ea;--muted:#a5a6ad;--line:#20222a;--accent:#c7ff4d;--accent-2:#f5ffb4;--card:#13141a;--radius:18px;--shadow:0 10px 30px rgba(0,0,0,.35),0 2px 8px rgba(0,0,0,.4)}
+    *{box-sizing:border-box} html,body{height:100%}
+    body{margin:0;font-family:"Plus Jakarta Sans",system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+    a{color:inherit;text-decoration:none}
+    .container{width:min(1100px,92%);margin-inline:auto}
+    header{position:fixed;inset:0 0 auto 0;height:72px;z-index:40;backdrop-filter:saturate(180%) blur(8px);background:linear-gradient(to bottom, rgba(10,10,12,.75), rgba(10,10,12,.35) 60%, transparent);border-bottom:1px solid rgba(255,255,255,.06)}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .logo{width:34px;height:34px;border-radius:9px;background:radial-gradient(100% 100% at 30% 20%, var(--accent) 0%, #5a5a14 60%, #191a1f 100%);box-shadow:0 0 22px rgba(199,255,77,.25), inset 0 0 14px rgba(255,255,255,.06)}
+    nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+    .cta{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#000;font-weight:800;padding:12px 18px;border-radius:999px;box-shadow:0 0 24px rgba(199,255,77,.25)}
+    .page-hero{padding-top:120px;padding-bottom:48px;background:radial-gradient(800px 380px at 10% 0%, rgba(199,255,77,.10), transparent 60%),radial-gradient(900px 420px at 120% 0%, rgba(255,255,255,.06), transparent 60%)}
+    h1{font-size:clamp(32px,4vw,48px);margin:0 0 6px;font-weight:900}
+    .sub{color:var(--muted)}
+    .doc{padding:34px 0 70px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0));border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    h2{font-size:22px;margin:22px 0 8px} h3{font-size:18px;margin:18px 0 6px}
+    ul{margin:10px 0 18px 20px}
+    footer{background:var(--bg-2);border-top:1px solid var(--line);color:#c9c9cf;padding:28px 0}
+    @media (max-width:720px){nav ul{display:none}}
   </style>
 </head>
 <body>
   <header>
-    <h1>Data Policy</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="data.html">Data Policy</a>
-      <a href="terms.html">Terms</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="container nav">
+      <div class="brand"><span class="logo"></span><span>WeGenerateHomeImprovementLeads</span></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="data.html">Data Policy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a class="cta" href="contact.html">Work With Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <div class="container">
-    <h2>Data We Collect</h2>
-    <p>We may collect information such as names, emails, phone numbers, and service interests. Data is securely stored and only retained as long as necessary for the purpose collected.</p>
-    <p>You may request access, correction, or deletion of your personal data at any time.</p>
-  </div>
+  <section class="page-hero">
+    <div class="container">
+      <h1>Data Policy</h1>
+      <div class="sub">How we collect, use, retain, and safeguard data.</div>
+    </div>
+  </section>
+
+  <section class="doc">
+    <div class="container card">
+      <h2>Scope</h2>
+      <p>This Data Policy explains our practices regarding personal data processed by <strong>BeautyCommerce Ltd</strong> (trading as <strong>WeGenerateHomeImprovementLeads</strong>) in connection with lead generation for home services (Roofing, Windows, Gutters, Garden).</p>
+
+      <h2>Data We Collect</h2>
+      <ul>
+        <li><strong>Contact data</strong> — name, email, phone, company, role.</li>
+        <li><strong>Lead preferences</strong> — service vertical, location, budget, timeline.</li>
+        <li><strong>Usage/technical</strong> — IP address, device/browser, pages viewed, timestamps, referral URLs, cookie identifiers.</li>
+      </ul>
+
+      <h2>Purposes of Processing</h2>
+      <ul>
+        <li>Supply, manage, and improve our Services.</li>
+        <li>Deliver and verify leads; prevent fraud and abuse.</li>
+        <li>Customer support and account communications.</li>
+        <li>Compliance with legal/regulatory obligations.</li>
+        <li>Marketing communications (where permitted and subject to your preferences).</li>
+      </ul>
+
+      <h2>Lawful Bases (UK/EU)</h2>
+      <p>We rely on one or more of: consent, contract, legitimate interests, and legal obligation.</p>
+
+      <h2>Sharing & Processors</h2>
+      <p>We use vetted vendors for hosting, analytics, messaging, CRM/webhooks, payment processing, and security. Each processor is bound by data processing agreements. We may disclose data to professional advisers or authorities when required, and during business transfers.</p>
+
+      <h2>International Transfers</h2>
+      <p>Where data is transferred outside the UK/EEA, we implement appropriate safeguards such as Standard Contractual Clauses and supplementary measures.</p>
+
+      <h2>Retention</h2>
+      <p>Personal data is retained only as long as necessary for the above purposes or as required by law. When no longer needed, we delete or anonymize it, or securely store and isolate it until deletion is possible.</p>
+
+      <h2>Security</h2>
+      <p>We implement organizational and technical measures (access controls, encryption in transit, least-privilege, monitoring). No method is 100% secure.</p>
+
+      <h2>Your Rights</h2>
+      <p>Subject to applicable law, you may request access, rectification, erasure, restriction, objection, and portability. To exercise rights, email <a href="mailto:info@beautycommerce.co.uk" style="text-decoration:underline">info@beautycommerce.co.uk</a>. You may lodge a complaint with the ICO (UK) or your local authority.</p>
+
+      <h2>Contact</h2>
+      <p><strong>BeautyCommerce Ltd</strong><br>
+         Company No. 16373981<br>
+         128 City Road, London, EC1V 2NX, United Kingdom<br>
+         Email: <a href="mailto:info@beautycommerce.co.uk" style="text-decoration:underline">info@beautycommerce.co.uk</a></p>
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025 BeautyCommerce Ltd</p>
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center">
+      <div>&copy; 2025 BeautyCommerce Ltd</div>
+      <div style="display:flex;gap:16px">
+        <a href="privacy.html">Privacy</a><span aria-hidden="true">•</span>
+        <a href="data.html">Data Policy</a><span aria-hidden="true">•</span>
+        <a href="terms.html">Terms</a><span aria-hidden="true">•</span>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
